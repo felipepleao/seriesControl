@@ -1,0 +1,125 @@
+.progress .header {
+  background: var(--bg-card);
+  padding: 3rem 0;
+  color: var(--title-color);
+  font-size: 2rem;
+  text-align: center;
+}
+
+.progress-text {
+  color: var(--title-color);
+  text-align: center;
+}
+
+.progress-text h3 {
+  font-size: 3.4rem;
+  font-weight: 700;
+}
+
+.progress-text p {
+  font-size: 1.6rem;
+}
+
+.progress-chart {
+  margin: 4rem auto;
+  width: 20rem;
+  height: 20rem;
+  background: conic-gradient(var(--progress-color) var(--percentage), var(--progress-background) 0);
+  border-radius: 50%;
+  position: relative;
+
+  transition: --percentage 2s linear; /* 2s é a duração da transição, você pode ajustá-la */
+}
+
+.progress-bar {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  inset: 10px;
+  width: 140px;
+  height: 140px;
+  border-radius: 100%;
+  margin: auto;
+  background-color: var(--bg-color);
+}
+
+.timer-countdown {
+  margin: 3rem 0;
+  text-align: center;
+  font-size: 3rem;
+  color: var(--text-color);
+}
+
+.card-style.progress h3 {
+  font-size: 2.4rem;
+  color: var(--title-color);
+}
+
+.count-progress {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem 0 3rem;
+  padding: 0.5rem 6rem;
+
+  font-size: 1.8rem;
+  color: var(--text-color);
+  font-weight: 400;
+}
+
+.count-progress-description,
+.count-progress-input {
+  display: flex;
+  align-items: center;
+  gap: 0 .8rem;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+}
+
+input[type="checkbox"]+label::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: #FFFFFF;
+  border: 1px solid var(--button-color);
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+input[type="checkbox"]:disabled+label::before {
+  background: var(--progress-background);
+}
+
+
+
+
+
+
+
+
+
+@keyframes progress {
+  0% {
+    transform: rotate(0deg);
+    clip: rect(0, 50px, 100px, 0);
+  }
+
+  50% {
+    transform: rotate(180deg);
+    clip: rect(0, 100px, 100px, 50px);
+  }
+
+  100% {
+    transform: rotate(360deg);
+    clip: rect(0, 50px, 100px, 0);
+  }
+}

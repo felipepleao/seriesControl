@@ -1,0 +1,76 @@
+.configuration-title {
+  position: relative;
+  padding: 9.4rem 0 27rem;
+
+  display: grid;
+  justify-content: center;
+
+  gap: 0.35rem 0;
+  text-align: center;
+}
+
+.configuration-title::before {
+  content: "";
+  position: absolute;
+  background: url("../assets/gymBackground.jfif") no-repeat center/cover;
+  inset: 0;
+  opacity: 0.05;
+}
+
+.configuration-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 20rem;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(18, 18, 20, 1));
+}
+
+.configuration-title div {
+  gap: 0 1.2rem;
+}
+
+.configuration-title div h1 {
+  font-size: 2.8rem;
+  color: var(--title-color);
+}
+
+.configuration-title h2 {
+  font-size: 1.4rem;
+  color: var(--text-color);
+}
+
+.configSeries h2 {
+  font-size: 2.4rem;
+  color: var(--title-color);
+}
+
+.configuration-title div,
+.setting,
+.setting div,
+.button-config {
+  display: flex;
+  align-items: center;
+}
+
+.setting {
+  margin: 0 auto;
+  max-width: 35rem;
+  justify-content: space-between;
+}
+
+.configSeries-display,
+.configSeries-display>div {
+  margin-top: 2.4rem;
+}
+
+.setting div {
+  font-size: 1.8rem;
+  color: var(--text-color);
+  gap: 0 8px;
+}
+
+.button-config {
+  cursor: pointer;
+}

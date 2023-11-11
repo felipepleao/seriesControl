@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SeriesControl</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/index.css" />
+    <script
+      src="https://kit.fontawesome.com/e65fff2301.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="shortcut icon" href="assets/logo.svg" type="image/x-svg" />
+    <script src="scripts/index.js" type="module" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <main id="main">
+        <section class="screen configuration">
+          <div class="configuration-title">
+            <div>
+              <img
+                src="assets/logo.svg"
+                alt="Logo da aplicação com formato de Healter equipamento de academia"
+              />
+              <h1>Series Control</h1>
+            </div>
+            <h2>Controle suas séries de exercícios</h2>
+          </div>
+
+          <div class="card-style configSeries">
+            <h2>Controle de Séries</h2>
+
+            <div class="configSeries-display">
+              <div class="setting series">
+                <div>
+                  <img src="assets/repeat.svg" alt="" />
+                  <p>Séries</p>
+                </div>
+
+                <div class="button-config btnSeries">
+                  <div class="series-config">
+                    <span class="series-count">01</span>
+                  </div>
+
+                  <div>
+                    <span class="btnSeries-remove"
+                      ><i
+                        class="fa-solid fa-circle-minus"
+                        style="color: #581c87"
+                      ></i
+                    ></span>
+                    <span class="btnSeries-add">
+                      <i
+                        class="fa-solid fa-circle-plus"
+                        style="color: #581c87"
+                      ></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="setting interval">
+                <div>
+                  <img src="assets/timer.svg" width="25" height="20" />
+                  <p>Intervalo</p>
+                </div>
+
+                <div class="button-config btnTimer">
+                  <div class="timer-config">
+                    <span class="timer-minutes">00</span>
+                    <span>:</span>
+                    <span class="timer-seconds">00</span>
+                  </div>
+                  <div class="btnTimer-cfg">
+                    <span class="btnTimer-remove"
+                      ><i
+                        class="fa-solid fa-circle-minus"
+                        style="color: #581c87"
+                      ></i
+                    ></span>
+                    <span class="btnTimer-add">
+                      <i
+                        class="fa-solid fa-circle-plus"
+                        style="color: #581c87"
+                      ></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <button class="button start">Iniciar</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="screen progress hidden">
+          <div class="header">
+            <h2>Series Control</h2>
+          </div>
+
+          <div class="progress-chart">
+            <div class="progress-bar">
+              <div class="progress-text">
+                <h3><span class="progress-number">0</span>%</h3>
+                <p>alcançado</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="timer-countdown">
+            <div>
+              <span class="countdown-minutes">00</span>:<span
+                class="countdown-seconds"
+                >00</span
+              >
+            </div>
+          </div>
+
+          <div class="card-style progress">
+            <h3>Progresso</h3>
+
+            <div class="count-progress">
+              <div class="count-progress-description">
+                <img src="assets/repeat.svg" alt="" />
+                <p>Séries</p>
+              </div>
+
+              <div class="count-progress-input">
+                <input type="checkbox" id="series" class="input-series" />
+                <label for="series" class="label"
+                  ><span class="input-series-initial">0</span>/<span
+                    class="input-series-final"
+                  ></span
+                ></label>
+              </div>
+            </div>
+
+            <button class="button reset">Reiniciar</button>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">Felipe.dev ©</footer>
+    </div>
+    <div class="modal-sucess">
+      <div class="card-modal">
+        <button class="card-modal-close">
+          <i class="fa-solid fa-x fa-lg" style="color: #581c87;"></i>
+        </button>
+
+        <div class="card-modal-message">
+          <img src="assets/smile.svg" alt="" />
+          <h2>
+            Parabéns, <br />
+            Concluído com sucesso!
+          </h2>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

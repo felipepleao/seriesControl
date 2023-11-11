@@ -1,0 +1,52 @@
+.modal-sucess {
+  position: absolute;
+  inset: 0;
+
+  display: grid;
+  place-content: center;
+  background-color: rgba(0, 0, 0, 0.7);
+
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal-sucess.open {
+  visibility: visible;
+  opacity: 1;
+}
+
+.card-modal {
+  max-width: 40rem;
+  width: 100%;
+  position: relative;
+  background-color: var(--bg-card);
+  padding: 3rem 2rem;
+  text-align: center;
+  border-radius: 16px;
+}
+
+.card-modal button {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+
+  background: none;
+  border: none;
+
+  cursor: pointer;
+  transition: transform .3s;
+}
+
+.card-modal button:hover {
+  transform: scale(1.1);
+}
+
+.card-modal-message {
+  display: grid;
+  gap: 1.5rem 0;
+  justify-items: center;
+
+  color: var(--text-color3);
+  font-size: 1.8rem;
+  line-height: 3.8rem;
+}
